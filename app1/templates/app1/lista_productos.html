@@ -1,0 +1,11 @@
+{% extends 'app1/tempbase.html' %}
+ 
+{% block content %}
+    <ul>
+    {% for producto in productos %}
+    
+      <li> {{producto.nombre}}, {{producto.marca}}, {{producto.tipo}}, {{producto.precio}}</li> 
+
+    {% endfor %}
+    </ul>
+{% endblock %}
