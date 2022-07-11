@@ -85,3 +85,7 @@ def formulario_albumes(request):
     return render (request, "app1/album_formulario.html", {"albumformulario":albumformulario})
 
 
+def sample(request):
+
+    return render(request, "app1/sample.html")
+

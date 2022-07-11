@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1.views import (formulario_albumes, formulario_autos, formulario_productos, listar_autos, listar_albumes, listar_productos)
+from app1.views import (formulario_albumes, formulario_autos, formulario_productos, listar_autos, listar_albumes, listar_productos, sample)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('productlist/', listar_productos),
     path('albumform/', formulario_albumes),
     path('albumlist/', listar_albumes),
+    path('sample/', sample),
     
    
 
