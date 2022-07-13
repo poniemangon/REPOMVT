@@ -6,6 +6,7 @@ class AutoFormulario(forms.Form):
     marca = forms.CharField()
     modelo = forms.CharField()
 
+
 class AlbumFormulario(forms.Form):
 
     nombre = forms.CharField()

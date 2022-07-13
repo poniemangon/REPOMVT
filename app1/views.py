@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from app1.models import Auto, Producto, Album
-from app1.forms import AutoFormulario, ProductoFormulario, AlbumFormulario
+from app1.forms import AutoFormulario, ProductoFormulario, AlbumFormulario, 
 
 
 # Create your views here.
@@ -85,7 +85,7 @@ def formulario_albumes(request):
     return render (request, "app1/album_formulario.html", {"albumformulario":albumformulario})
 
 
-def sample(request):
+def index(request):
 
-    return render(request, "app1/sample.html")
+    return render(request, "app1/index.html")
 
