@@ -1,0 +1,22 @@
+{% extends 'app1/tempbase.html' %}
+
+{% block content %}
+
+
+<form action="" method="GET">
+    {{busqueda_formulario}}
+    <button type="submit">Buscar</button>
+</form>
+{% if autos %}
+    <ul>
+    {% for auto in autos %}
+        <li>{{auto.modelo}}</li>   
+    {% endfor %}
+    </ul>
+{% else %}
+    <h1> No existe un modelo de ese auto</h1>
+{% endif %}
+
+<a class="nav-link" href="/carlist">Volver a la lista de autos</a>
+
+{% endblock %}

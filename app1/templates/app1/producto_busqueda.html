@@ -1,0 +1,22 @@
+{% extends 'app1/tempbase.html' %}
+
+{% block content %}
+
+
+<form action="" method="GET">
+    {{busqueda_formulario_p}}
+    <button type="submit">Buscar</button>
+</form>
+{% if productos %}
+    <ul>
+    {% for producto in productos %}
+        <li>{{producto.nombre}}</li>   
+    {% endfor %}
+    </ul>
+{% else %}
+    <h1> No existe un producto con ese nombre</h1>
+{% endif %}
+
+<a class="nav-link" href="/productlist">Volver a la lista de productos</a>
+
+{% endblock %}

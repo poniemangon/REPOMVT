@@ -1,0 +1,22 @@
+{% extends 'app1/tempbase.html' %}
+
+{% block content %}
+
+
+<form action="" method="GET">
+    {{busqueda_formulario_a}}
+    <button type="submit">Buscar</button>
+</form>
+{% if albums %}
+    <ul>
+    {% for album in albums %}
+        <li>{{album.nombre}}</li>   
+    {% endfor %}
+    </ul>
+{% else %}
+    <h1> No existe un album con ese nombre</h1>
+{% endif %}
+
+<a class="nav-link" href="/albumlist">Volver a la lista de albums</a>
+
+{% endblock %}

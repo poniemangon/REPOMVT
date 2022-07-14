@@ -20,4 +20,11 @@ class ProductoFormulario(forms.Form):
     tipo = forms.CharField()
     precio = forms.IntegerField()
 
+class AutoBusquedaFormulario(forms.Form):
+    criterio = forms.CharField()
+class ProductoBusquedaFormulario(forms.Form):
+    criterio = forms.CharField()
+class AlbumBusquedaFormulario(forms.Form):
+    criterio = forms.CharField()
+
 
